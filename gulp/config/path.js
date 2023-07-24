@@ -1,9 +1,9 @@
 // Получаем имя папки проекта
-import * as nodePath from 'path'
+import * as nodePath from "path";
 
-const rootFolder = nodePath.basename(nodePath.resolve())
-const buildFolder = `./dist`
-const srcFolder = `./src`
+const rootFolder = nodePath.basename(nodePath.resolve());
+const buildFolder = `./dist`;
+const srcFolder = `./src`;
 
 export const path = {
   build: {
@@ -29,10 +29,11 @@ export const path = {
     html: `${srcFolder}/**/*.html`,
     images: `${srcFolder}/**/*.{jpg,jpeg,png,svg,gif,webp,ico}`,
     static: `${srcFolder}/static/**/*.*`,
+    svgicons: `${srcFolder}/svgicons/*.svg`,
   },
   clean: buildFolder,
   buildFolder: buildFolder,
   srcFolder: srcFolder,
   root: rootFolder,
   ftp: ``, // Путь к нужной папке на удаленном сервере. gulp добавит имя папки проекта автоматически
-}
+};
