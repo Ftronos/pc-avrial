@@ -194,3 +194,13 @@
   grid-column-start: 1;
   grid-column-end: -1;
 }
+
+.button {
+  border-radius: 20px;
+
+  &_yellow {
+    background-color: $yellow;
+    color: $black;
+    padding: 17px 37px;
+  }
+}
