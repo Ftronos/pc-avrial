@@ -1,0 +1,191 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+@mixin offset-margin($margin, $value) {
+  margin-#{$margin}: $value;
+}
+
+@mixin offset-padding($padding, $value) {
+  padding-#{$padding}: $value;
+}
+
+@for $i from 1 through 20 {
+  // Desktop margins
+  @each $margin in top, left, bottom, right {
+    $slice: str-slice($margin, 1, 1);
+
+    .m#{$slice}-#{$i * 5} {
+      @include offset-margin($margin, 1px * $i * 5);
+    }
+  }
+
+  .m-#{$i * 5} {
+    @include offset-margin("top", 1px * $i * 5);
+    @include offset-margin("bottom", 1px * $i * 5);
+    @include offset-margin("left", 1px * $i * 5);
+    @include offset-margin("right", 1px * $i * 5);
+  }
+
+  @each $padding in top, left, bottom, right {
+    $slice: str-slice($padding, 1, 1);
+    .p#{$slice}-#{$i * 5} {
+      @include offset-padding($padding, 1px * $i * 5);
+    }
+  }
+
+  // Desktop paddings
+  .p-#{$i * 5} {
+    @include offset-padding("top", 1px * $i * 5);
+    @include offset-padding("bottom", 1px * $i * 5);
+    @include offset-padding("left", 1px * $i * 5);
+    @include offset-padding("right", 1px * $i * 5);
+  }
+}
+
+@for $i from 1 through 20 {
+  // Mobile margins
+  @each $margin in top, left, bottom, right {
+    $slice: str-slice($margin, 1, 1);
+
+    .m-mob-#{$slice}-#{$i * 5} {
+      @include media(767) {
+        @include offset-margin($margin, 1px * $i * 5);
+      }
+    }
+  }
+
+  // Mobile paddings
+  @each $padding in top, left, bottom, right {
+    $slice: str-slice($padding, 1, 1);
+    .p-mob-#{$slice}-#{$i * 5} {
+      @include media(767) {
+        @include offset-padding($padding, 1px * $i * 5);
+      }
+    }
+  }
+}
+
+.opacity-1 {
+  opacity: 0.1;
+}
+
+.opacity-2 {
+  opacity: 0.2;
+}
+
+.opacity-3 {
+  opacity: 0.3;
+}
+
+.opacity-4 {
+  opacity: 0.4;
+}
+
+.opacity-5 {
+  opacity: 0.5;
+}
+
+.opacity-6 {
+  opacity: 0.6;
+}
+
+.opacity-7 {
+  opacity: 0.7;
+}
+
+.opacity-8 {
+  opacity: 0.8;
+}
+
+.opacity-9 {
+  opacity: 0.9;
+}
+
+.text {
+  &_thin {
+    font-weight: 100;
+  }
+
+  &_light {
+    font-weight: 300;
+  }
+
+  &_medium {
+    font-weight: 500;
+  }
+
+  &_bold {
+    font-weight: 700;
+  }
+
+  &_black {
+    font-weight: 900;
+  }
+
+  &_italic {
+    font-style: italic;
+  }
+
+  &_underline {
+    text-decoration: underline;
+  }
+
+  &_uppercase {
+    text-transform: uppercase;
+  }
+
+  &_left {
+    text-align: left;
+  }
+
+  &_center {
+    text-align: center;
+  }
+
+  &_right {
+    text-align: right;
+  }
+}
+
+.flex {
+  display: flex;
+
+  &_align-start {
+    align-items: flex-start;
+  }
+
+  &_align-center {
+    align-items: center;
+  }
+
+  &_align-end {
+    align-items: flex-end;
+  }
+
+  &_justify-start {
+    justify-content: flex-start;
+  }
+
+  &_justify-center {
+    justify-content: center;
+  }
+
+  &_justify-end {
+    justify-content: flex-end;
+  }
+}
+
+.grid {
+  display: grid;
+
+  &_col-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &_col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &_col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
