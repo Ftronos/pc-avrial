@@ -76,6 +76,12 @@
   }
 }
 
+@mixin mediaMob {
+  @include media(991) {
+    @content;
+  }
+}
+
 @mixin mediaMinMax($widthFrom, $widthTo) {
   @media (min-width: #{$widthFrom + '.98' + px}) and (max-width: #{$widthTo + '.98' + px}) {
     @content;
