@@ -1,12 +1,349 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('html/head.html', {
-    'title': 'Главная'
-  })
+  @@include('html/head.html', { 'title': 'Главная' })
   <body class="wrapper">
-    @@include('html/header.html', {})
-      
-    @@include('html/footer.html', {})
-    @@include('html/script.html', {})
+    <div class="intro full-width wrapper">
+      @@include('html/header.html', {})
+      <h1>
+        ПРОИЗВОДСТВЕННАЯ
+        <br />
+        КОМПАНИЯ
+        <br />
+        «ЭВРИАЛ»
+      </h1>
+      <div class="intro__info">
+        <div class="intro__info__top">Наши возможности в цифрах</div>
+        <div class="intro__info__item">
+          <span>3-6</span>
+          Полнокомплектных зданий в месяц
+        </div>
+        <div class="intro__info__item">
+          <span>200 000</span>
+          Максимальная загрузка производства
+        </div>
+        <div class="intro__info__item">
+          <span>1500 м2</span>
+          Площадь здания под ключ для вашего бизнеса
+        </div>
+      </div>
+    </div>
+    <div class="about">
+      <h2 class="title title_border">О компании</h2>
+      <p>
+        <strong>ПК «ЭВРИАЛ»</strong>
+        - отечественный производитель полнокомплектных зданий заводской готовности на основе
+        металлоконструкций, ограждающих конструкций «Гибкий сэндвич» и тентовых структур.
+        <br />
+        <br />
+        Основной целью производственной компании «ЭВРИАЛ» является комплексная поставка
+        полнокомплектных решений для объектов промышленного строительства, а также объектов
+        специального назначения и городской инфраструктуры. Предлагаем решения, состоящие из
+        продукции российского производства, спроектированы и изготовлены на собственных
+        производственных площадях в Московской области.
+      </p>
+    </div>
+    <div class="news">
+      <h2 class="title">Новости</h2>
+      <div class="news__list">
+        <div class="news__item news__item_big">
+          <div class="news__item__img">
+            <img src="images/photos/02.jpg" alt="" />
+          </div>
+          <a href="https://avrial.ru" target="_blank">www.avrial.ru</a>
+          <time datetime="2022-11-03">03.11.2022</time>
+          <h3>
+            С открытием новой производственной площадки компании «ЭВРИАЛ» объёмы производства
+            удвоятся
+          </h3>
+        </div>
+        <div class="news__item">
+          <div class="news__item__img">
+            <img src="images/photos/03.jpg" alt="" />
+          </div>
+          <h3>СМИ о нас</h3>
+          <time datetime="2022-11-03">03.11.2022</time>
+          <a href="https://avrial.ru" target="_blank">www.avrial.ru</a>
+        </div>
+        <div class="news__item">
+          <div class="news__item__img">
+            <img src="images/photos/04.png" alt="" />
+          </div>
+          <h3>
+            В ОЭЗ «Технополис «Москва» разработали защитное укрытие для терминала по перевалке
+            навалочных грузов на Дальнем Востоке
+          </h3>
+          <time datetime="2022-11-03">03.11.2022</time>
+          <a href="https://mos.ru" target="_blank">www.mos.ru</a>
+        </div>
+      </div>
+      <div class="news__other">
+        Другие новости
+        <svg class="icon">
+          <use xlink:href="images/icons/icons.svg#chevron-bottom"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="request">
+      <h2 class="title title_border">
+        Рассчитать стоимость
+        <br />
+        полнокомплектного здания
+      </h2>
+      <form class="request__form">
+        <input x-data x-mask="+7(999)999-99-99" placeholder="+7 (___)___-__-__" />
+        <button class="button button_yellow">Отправить</button>
+      </form>
+      <p>
+        Оставьте заявку и наш менеджер свяжется с Вами. Он ответит на любые ваши вопросы и сделает
+        расчёт
+      </p>
+    </div>
+    <div class="services">
+      <h2 class="title title_border">Услуги:</h2>
+      <div class="services__list">
+        <div class="services__item">
+          <div class="services__item__img">
+            <img src="images/services/01.jpg" alt="" />
+          </div>
+          <span>1</span>
+          <h3>Проектирование КМД</h3>
+        </div>
+        <div class="services__item">
+          <div class="services__item__img">
+            <img src="images/services/02.png" alt="" />
+          </div>
+          <span>2</span>
+          <h3>Изготовление металлоконструкций</h3>
+        </div>
+        <div class="services__item">
+          <div class="services__item__img">
+            <img src="images/services/03.jpg" alt="" />
+          </div>
+          <span>3</span>
+          <h3>Изготовление фасонных элементов, применяемых при монтаже ограждающих конструкций</h3>
+        </div>
+        <div class="services__item">
+          <div class="services__item__img">
+            <img src="images/services/04.png" alt="" />
+          </div>
+          <span>4</span>
+          <h3>Раскрой и изготовление тентовых структур</h3>
+        </div>
+        <div class="services__item">
+          <div class="services__item__img">
+            <img src="images/services/05.jpg" alt="" />
+          </div>
+          <span>5</span>
+          <h3>Изготовление утепленных тентовых структур по технологии «Гибкий сэндвич»</h3>
+        </div>
+        <div class="services__item">
+          <div class="services__item__img">
+            <img src="images/services/06.png" alt="" />
+          </div>
+          <span>6</span>
+          <h3>Изготовление и поставка полнокомплектных зданий заводской готовности</h3>
+        </div>
+      </div>
+    </div>
+    <div class="buildings full-width">
+      <div class="buildings__title wrapper">
+        <h2 class="title title_border">
+          Примеры полнокомплектных зданий
+          <br />
+          <span>На основе металлоконструкций и тентовых структур ПК «ЭВРИАЛ»:</span>
+        </h2>
+      </div>
+      <div class="buildings__list wrapper">
+        <div class="buildings__item full-width wrapper" x-data="{isOpen: true}">
+          <h2 class="title title_border">
+            <span :class="isOpen && 'active'" @click="isOpen = !isOpen">
+              <svg class="icon">
+                <use xlink:href="images/icons/icons.svg#chevron-bottom"></use>
+              </svg>
+            </span>
+            Складские сооружения
+          </h2>
+          <div class="buildings__grid full-width" x-show="isOpen">
+            <div class="buildings__grid__item">
+              <div class="buildings__grid__item__img">
+                <img src="images/buildings/01.png" alt="" />
+              </div>
+              <img
+                src="images/flexible-sandwich.png"
+                alt=""
+                class="buildings__grid__item__badget" />
+              <p>Цех ОГЗ, Амурский газохимический комплекс</p>
+              <p>Общая площадь здания: 1 800 м2</p>
+            </div>
+            <div class="buildings__grid__item">
+              <div class="buildings__grid__item__img">
+                <img src="images/buildings/02.png" alt="" />
+              </div>
+              <img
+                src="images/flexible-sandwich.png"
+                alt=""
+                class="buildings__grid__item__badget" />
+              <p>Утепленный склад для проекта «Арктик СПГ2»</p>
+              <p>Общая площадь здания: 400 м2</p>
+            </div>
+            <div class="buildings__grid__item">
+              <div class="buildings__grid__item__img">
+                <img src="images/buildings/03.png" alt="" />
+              </div>
+              <img
+                src="images/flexible-sandwich.png"
+                alt=""
+                class="buildings__grid__item__badget" />
+              <p>Укрытие склада этана для проекта «Арктик СПГ2»</p>
+              <p>Общая площадь здания: 223,2 м2</p>
+            </div>
+            <div class="buildings__grid__item">
+              <div class="buildings__grid__item__img">
+                <img src="images/buildings/04.png" alt="" />
+              </div>
+              <img
+                src="images/flexible-sandwich.png"
+                alt=""
+                class="buildings__grid__item__badget" />
+              <p>Два центральных материальных склада АГД «Даймондс»</p>
+              <p>Общая площадь зданий: 1 584 м2</p>
+            </div>
+          </div>
+        </div>
+        <div class="buildings__item full-width wrapper" x-data="{isOpen: true}">
+          <h2 class="title title_border">
+            <span :class="isOpen && 'active'" @click="isOpen = !isOpen">
+              <svg class="icon">
+                <use xlink:href="images/icons/icons.svg#chevron-bottom"></use>
+              </svg>
+            </span>
+            Авиационные ангары и сооружения
+          </h2>
+          <div class="buildings__grid full-width" x-show="isOpen">
+            <div class="buildings__grid__item">
+              <div class="buildings__grid__item__img">
+                <img src="images/buildings/05.png" alt="" />
+              </div>
+              <img
+                src="images/flexible-sandwich.png"
+                alt=""
+                class="buildings__grid__item__badget" />
+              <p>Авиационный ангар, с. Игнатово</p>
+              <p>Общая площадь здания: 984,80 м2</p>
+            </div>
+            <div class="buildings__grid__item">
+              <div class="buildings__grid__item__img">
+                <img src="images/buildings/06.jpg" alt="" />
+              </div>
+              <img
+                src="images/flexible-sandwich.png"
+                alt=""
+                class="buildings__grid__item__badget" />
+              <p>Авиационный ангар в Симферополе</p>
+              <p>Общая площадь здания: 6 489,80 м2</p>
+            </div>
+            <div class="buildings__grid__item">
+              <div class="buildings__grid__item__img">
+                <img src="images/buildings/07.png" alt="" />
+              </div>
+              <p>Сборно-разборный ангар вертолета</p>
+              <p>Общая площадь здания: 576 м2</p>
+            </div>
+            <div class="buildings__grid__item">
+              <div class="buildings__grid__item__img">
+                <img src="images/buildings/08.png" alt="" />
+              </div>
+              <img
+                src="images/flexible-sandwich.png"
+                alt=""
+                class="buildings__grid__item__badget" />
+              <p>Ангар для спецтехники, а/п «Хибины»</p>
+              <p>Общая площадь здания: 1 607 м2</p>
+            </div>
+          </div>
+        </div>
+        <div class="buildings__item full-width wrapper" x-data="{isOpen: true}">
+          <h2 class="title title_border">
+            <span :class="isOpen && 'active'" @click="isOpen = !isOpen">
+              <svg class="icon">
+                <use xlink:href="images/icons/icons.svg#chevron-bottom"></use>
+              </svg>
+            </span>
+            Сельскохозяйственные укрытия
+          </h2>
+          <div class="buildings__grid full-width" x-show="isOpen">
+            <div class="buildings__grid__item">
+              <div class="buildings__grid__item__img">
+                <img src="images/buildings/09.png" alt="" />
+              </div>
+              <p>Тентовое укрытие для зерновых культур</p>
+              <p>Общая площадь здания: 1 400 м2</p>
+            </div>
+            <div class="buildings__grid__item">
+              <div class="buildings__grid__item__img">
+                <img src="images/buildings/10.jpg" alt="" />
+              </div>
+              <p>Тентовое укрытие для зерновых культур</p>
+              <p>Общая площадь здания: 1 400 м2</p>
+            </div>
+            <div class="buildings__grid__item">
+              <div class="buildings__grid__item__img">
+                <img src="images/buildings/11.png" alt="" />
+              </div>
+              <p>Тентовое укрытие для зерновых культур</p>
+              <p>Общая площадь здания: 1 886,8 м2</p>
+            </div>
+            <div class="buildings__grid__item">
+              <div class="buildings__grid__item__img">
+                <img src="images/buildings/12.png" alt="" />
+              </div>
+              <p>Межсезонный закрытый ток</p>
+              <p>Площадь: 1 920 м2</p>
+            </div>
+          </div>
+        </div>
+        <div class="buildings__item full-width wrapper" x-data="{isOpen: true}">
+          <h2 class="title title_border">
+            <span :class="isOpen && 'active'" @click="isOpen = !isOpen">
+              <svg class="icon">
+                <use xlink:href="images/icons/icons.svg#chevron-bottom"></use>
+              </svg>
+            </span>
+            Производственные здания и ангары
+          </h2>
+          <div class="buildings__grid full-width" x-show="isOpen">
+            <div class="buildings__grid__item">
+              <div class="buildings__grid__item__img">
+                <img src="images/buildings/13.png" alt="" />
+              </div>
+              <p>Производственно-складское сооружение</p>
+              <p>Площадь здания: 500 м2</p>
+            </div>
+            <div class="buildings__grid__item">
+              <div class="buildings__grid__item__img">
+                <img src="images/buildings/14.png" alt="" />
+              </div>
+              <p>Производственно-складской комплекс</p>
+              <p>Площадь здания: 1 400 м2</p>
+            </div>
+            <div class="buildings__grid__item">
+              <div class="buildings__grid__item__img">
+                <img src="images/buildings/15.png" alt="" />
+              </div>
+              <p>Реконструкция производственно-складского здания</p>
+              <p>Площадь здания: 209,88 м2</p>
+            </div>
+            <div class="buildings__grid__item">
+              <div class="buildings__grid__item__img">
+                <img src="images/buildings/16.png" alt="" />
+              </div>
+              <p>Складское помещение, Московская обл.</p>
+              <p>Площадь укрытия: 300 м2</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    @@include('html/footer.html', {}) @@include('html/script.html', {})
   </body>
-</html> 
+</html>

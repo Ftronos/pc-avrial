@@ -204,3 +204,21 @@
     padding: 17px 37px;
   }
 }
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  padding-left: 40px;
+}
+
+.title_border {
+  position: relative;
+
+  @include before {
+    border-left: 10px solid $yellow;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+}
