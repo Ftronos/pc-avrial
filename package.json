@@ -45,11 +45,11 @@
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-file-include": "^2.3.0",
+    "gulp-fonter-fix": "^0.0.1",
     "gulp-ftp": "^1.1.0",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^3.0.0",
-    "gulp-fonter-fix": "^0.0.1",
     "gulp-imagemin": "^8.0.0",
     "gulp-newer": "^1.4.0",
     "gulp-notify": "^4.0.0",
@@ -73,6 +73,8 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "@alpinejs/mask": "^3.12.3",
+    "alpinejs": "^3.12.3",
     "aos": "^2.3.4",
     "swiper": "^8.4.5"
   }
