@@ -153,7 +153,7 @@
           <span>На основе металлоконструкций и тентовых структур ПК «ЭВРИАЛ»:</span>
         </h2>
       </div>
-      <div class="buildings__list wrapper">
+      <div class="wrapper">
         <div class="buildings__item full-width wrapper" x-data="{isOpen: true}">
           <h2 class="title title_border">
             <span :class="isOpen && 'active'" @click="isOpen = !isOpen">
@@ -342,6 +342,76 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="metal-structures full-width wrapper">
+      <div class="metal-structures__title full-width wrapper">
+        <h2 class="title title_border">Цех металлоконструкций</h2>
+      </div>
+      <div>
+        <p>
+          Все изделия, изготовленные на производстве, проходят приемку на соответствие требованиям и
+          нормам, ТЗ, а также технической документации.
+        </p>
+        <br />
+        <strong>Мы осуществляем:</strong>
+        <br />
+        <br />
+        <ul>
+          <li>Входной контроль</li>
+          <li>
+            Операционный контроль, который включает проверку качества сборки, сварных швов,
+            антикоррозийных покрытий и проверку геометрических параметров конструкций
+          </li>
+          <li>
+            Приёмо-сдаточный контроль, включающий визуальный контроль конструкций, их геометрические
+            параметры, комплектность, маркировку, упаковку
+          </li>
+        </ul>
+      </div>
+      <div class="metal-structures__gallery full-width">
+        <div class="metal-structures__gallery__item"><img src="images/photos/07.jpg" alt="" /></div>
+        <div class="metal-structures__gallery__item"><img src="images/photos/08.jpg" alt="" /></div>
+        <div class="metal-structures__gallery__item"><img src="images/photos/09.jpg" alt="" /></div>
+      </div>
+    </div>
+    <div class="awning-cutting full-width wrapper">
+      <div class="awning-cutting__title full-width wrapper">
+        <h2 class="title title_border">
+          Цех по раскройке тента
+          <br />
+          <span>Площадь подиума - свыше 600 м2</span>
+        </h2>
+      </div>
+      <div class="awning-cutting__list">
+        <div class="awning-cutting__list__item">
+          <h3>Сокращение времени производства без потери качества</h3>
+          <p>
+            Без подиума такой значительной площади, выполнение подобных работ занимает больше
+            времени и при этом страдает качество изготавливаемого тентовое полотна, т.к. стыки
+            полотен приходится перекрывать, требуются лишние клапана, что увеличивает расход
+            материалов, количество техники и людей, задействованных в монтаже
+          </p>
+        </div>
+        <div class="awning-cutting__list__item">
+          <h3>Меньше техники и людей на монтаже – меньше затрат</h3>
+          <p>
+            Сокращение количества операций при изготовлении тентовых полотен, большая площадь
+            готовых полотен позволяет осуществлять быстрый монтаж
+          </p>
+        </div>
+        <div class="awning-cutting__list__item">
+          <h3>Площадь панели «Гибкого сэндвича» до 200 м2</h3>
+          <p>
+            Изготовление панелей такой значительной площади возможно благодаря одному из самых
+            больших в России подиумов для раскроя тентового полотна, установленного на производстве
+          </p>
+        </div>
+      </div>
+      <div class="awning-cutting__gallery full-width">
+        <div class="awning-cutting__gallery__item"><img src="images/photos/10.png" alt="" /></div>
+        <div class="awning-cutting__gallery__item"><img src="images/photos/11.png" alt="" /></div>
+        <div class="awning-cutting__gallery__item"><img src="images/photos/12.png" alt="" /></div>
       </div>
     </div>
     @@include('html/footer.html', {}) @@include('html/script.html', {})

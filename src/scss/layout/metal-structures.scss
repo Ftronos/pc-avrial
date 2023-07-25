@@ -1,0 +1,61 @@
+.metal-structures {
+  line-height: 30px;
+  padding-bottom: 60px;
+
+  &__title {
+    background-image: url("./../images/photos/06.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-block: 35px;
+    color: $white;
+    position: relative;
+    margin-bottom: 50px;
+
+    .title {
+      z-index: 1;
+    }
+  }
+
+  ul {
+    li {
+      position: relative;
+
+      @include before {
+        width: 15px;
+        height: 3px;
+        left: -12px;
+        top: 13px;
+        transform: translateX(-100%);
+        background-color: $yellow;
+      }
+    }
+  }
+
+  &__gallery {
+    display: flex;
+    gap: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 50px;
+
+    &__item {
+      flex-grow: 1;
+      flex-basis: 0;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 4px 4px 9px 0px rgba($black, 0.25);
+      position: relative;
+
+      img {
+        width: 100%;
+        aspect-ratio: 1.45;
+        object-fit: cover;
+      }
+
+      @include after {
+        background: rgba($black, 0.5);
+        inset: 0;
+      }
+    }
+  }
+}
