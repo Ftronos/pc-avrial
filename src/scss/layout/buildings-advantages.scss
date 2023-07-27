@@ -1,0 +1,79 @@
+.buildings-advantages {
+  padding-bottom: 60px;
+
+  &__title {
+    background-image: url("./../images/photos/05.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-block: 35px;
+    color: $white;
+    position: relative;
+    margin-bottom: 45px;
+
+    @include before {
+      background-color: rgba($black, 0.5);
+      inset: 0;
+    }
+
+    .title {
+      z-index: 1;
+
+      span {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 100px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid $lightGray;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+
+    span {
+      font-size: 40px;
+      line-height: 1;
+      font-weight: 700;
+      color: $yellow;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__constructions {
+    padding-top: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    .title {
+      margin-bottom: 60px;
+
+      @include after {
+        width: 600px;
+        border-bottom: 1px solid $lightGray;
+        bottom: -30px;
+        left: 0;
+      }
+    }
+  }
+
+  &__slider {
+    width: 290px;
+    flex-shrink: 0;
+    margin-left: 150px;
+
+    img {
+      width: 100%;
+    }
+  }
+}

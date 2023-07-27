@@ -21,7 +21,8 @@ import {
 // import AOS from 'aos'
 
 /* Раскомментировать для использования */
-// import Swiper, { Navigation, Pagination } from 'swiper'
+import Swiper, { Navigation, Pagination, Autoplay } from "swiper";
+Swiper.use([Navigation, Pagination, Autoplay]);
 
 // Включить/выключить FLS (Full Logging System) (в работе)
 window["FLS"] = location.hostname === "localhost";
@@ -72,3 +73,21 @@ Alpine.plugin(mask);
 
 window.Alpine = Alpine;
 Alpine.start();
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (document.querySelector("[js-constructions-slider]")) {
+    initConstructionsSlider();
+  }
+});
+
+const initConstructionsSlider = () => {
+  const swiper = new Swiper("[js-constructions-slider]", {
+    spaceBetween: 30,
+    slidesPerView: 1,
+    loop: true,
+    autoplay: {
+      delay: 0,
+    },
+    speed: 3000,
+  });
+};
