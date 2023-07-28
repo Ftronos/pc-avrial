@@ -42,7 +42,7 @@
         производственных площадях в Московской области.
       </p>
     </div>
-    <div class="news" id="news">
+    <div class="news" id="news" x-data="{isOpen: false}">
       <h2 class="title">Новости</h2>
       <div class="news__list">
         <div class="news__item news__item_big">
@@ -76,11 +76,79 @@
           <a href="https://mos.ru" target="_blank">www.mos.ru</a>
         </div>
       </div>
-      <div class="news__other">
+      <div class="news__other" :class="isOpen && 'active'" @click="isOpen = !isOpen">
         Другие новости
         <svg class="icon">
           <use xlink:href="images/icons/icons.svg#chevron-bottom"></use>
         </svg>
+      </div>
+      <div class="news__others" x-show="isOpen">
+        <div class="news__others__item">
+          <div class="news__others__item__img">
+            <img src="images/photos/02.jpg" alt="" />
+          </div>
+          <a href="https://avrial.ru" target="_blank">www.avrial.ru</a>
+          <time datetime="2022-11-03">03.11.2022</time>
+          <a href="#" class="news__others__item__title">
+            С открытием новой производственной площадки компании «ЭВРИАЛ» объёмы производства
+            удвоятся
+          </a>
+        </div>
+        <div class="news__others__item">
+          <div class="news__others__item__img">
+            <img src="images/photos/02.jpg" alt="" />
+          </div>
+          <a href="https://avrial.ru" target="_blank">www.avrial.ru</a>
+          <time datetime="2022-11-03">03.11.2022</time>
+          <a href="#" class="news__others__item__title">
+            С открытием новой производственной площадки компании «ЭВРИАЛ» объёмы производства
+            удвоятся
+          </a>
+        </div>
+        <div class="news__others__item">
+          <div class="news__others__item__img">
+            <img src="images/photos/02.jpg" alt="" />
+          </div>
+          <a href="https://avrial.ru" target="_blank">www.avrial.ru</a>
+          <time datetime="2022-11-03">03.11.2022</time>
+          <a href="#" class="news__others__item__title">
+            С открытием новой производственной площадки компании «ЭВРИАЛ» объёмы производства
+            удвоятся
+          </a>
+        </div>
+        <div class="news__others__item">
+          <div class="news__others__item__img">
+            <img src="images/photos/02.jpg" alt="" />
+          </div>
+          <a href="https://avrial.ru" target="_blank">www.avrial.ru</a>
+          <time datetime="2022-11-03">03.11.2022</time>
+          <a href="#" class="news__others__item__title">
+            С открытием новой производственной площадки компании «ЭВРИАЛ» объёмы производства
+            удвоятся
+          </a>
+        </div>
+        <div class="news__others__item">
+          <div class="news__others__item__img">
+            <img src="images/photos/02.jpg" alt="" />
+          </div>
+          <a href="https://avrial.ru" target="_blank">www.avrial.ru</a>
+          <time datetime="2022-11-03">03.11.2022</time>
+          <a href="#" class="news__others__item__title">
+            С открытием новой производственной площадки компании «ЭВРИАЛ» объёмы производства
+            удвоятся
+          </a>
+        </div>
+        <div class="news__others__item">
+          <div class="news__others__item__img">
+            <img src="images/photos/02.jpg" alt="" />
+          </div>
+          <a href="https://avrial.ru" target="_blank">www.avrial.ru</a>
+          <time datetime="2022-11-03">03.11.2022</time>
+          <a href="#" class="news__others__item__title">
+            С открытием новой производственной площадки компании «ЭВРИАЛ» объёмы производства
+            удвоятся
+          </a>
+        </div>
       </div>
     </div>
     <div class="request" id="form">
