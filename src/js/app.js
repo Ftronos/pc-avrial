@@ -78,6 +78,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (document.querySelector("[js-constructions-slider]")) {
     initConstructionsSlider();
   }
+
+  if (document.querySelector("[js-partners-slider]")) {
+    initPartnersSlider();
+  }
 });
 
 const initConstructionsSlider = () => {
@@ -87,6 +91,21 @@ const initConstructionsSlider = () => {
     loop: true,
     autoplay: {
       delay: 0,
+    },
+    speed: 3000,
+  });
+};
+
+const initPartnersSlider = () => {
+  const swiper = new Swiper("[js-partners-slider]", {
+    slidesPerView: 4,
+    loop: true,
+    navigation: {
+      prevEl: "[js-partners-slider-left]",
+      nextEl: "[js-partners-slider-right]",
+    },
+    autoplay: {
+      delay: 1000,
     },
     speed: 3000,
   });

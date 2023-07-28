@@ -40,7 +40,8 @@
         }
       }
 
-      a {
+      a,
+      span {
         text-decoration: underline;
         text-decoration-color: transparent;
         transition: $standartTrans;

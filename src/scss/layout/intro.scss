@@ -1,6 +1,8 @@
 .intro {
   position: relative;
   background-image: url("./../images/photos/01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   color: $white;
   padding-bottom: 50px;
 

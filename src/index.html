@@ -27,7 +27,7 @@
         </div>
       </div>
     </div>
-    <div class="about">
+    <div class="about" id="about">
       <h2 class="title title_border">О компании</h2>
       <p>
         <strong>ПК «ЭВРИАЛ»</strong>
@@ -42,7 +42,7 @@
         производственных площадях в Московской области.
       </p>
     </div>
-    <div class="news">
+    <div class="news" id="news">
       <h2 class="title">Новости</h2>
       <div class="news__list">
         <div class="news__item news__item_big">
@@ -51,16 +51,16 @@
           </div>
           <a href="https://avrial.ru" target="_blank">www.avrial.ru</a>
           <time datetime="2022-11-03">03.11.2022</time>
-          <h3>
+          <a href="#" class="news__item__title">
             С открытием новой производственной площадки компании «ЭВРИАЛ» объёмы производства
             удвоятся
-          </h3>
+          </a>
         </div>
         <div class="news__item">
           <div class="news__item__img">
             <img src="images/photos/03.jpg" alt="" />
           </div>
-          <h3>СМИ о нас</h3>
+          <a href="#" class="news__item__title">СМИ о нас</a>
           <time datetime="2022-11-03">03.11.2022</time>
           <a href="https://avrial.ru" target="_blank">www.avrial.ru</a>
         </div>
@@ -68,10 +68,10 @@
           <div class="news__item__img">
             <img src="images/photos/04.png" alt="" />
           </div>
-          <h3>
+          <a href="#" class="news__item__title">
             В ОЭЗ «Технополис «Москва» разработали защитное укрытие для терминала по перевалке
             навалочных грузов на Дальнем Востоке
-          </h3>
+          </a>
           <time datetime="2022-11-03">03.11.2022</time>
           <a href="https://mos.ru" target="_blank">www.mos.ru</a>
         </div>
@@ -83,7 +83,7 @@
         </svg>
       </div>
     </div>
-    <div class="request">
+    <div class="request" id="form">
       <h2 class="title title_border">
         Рассчитать стоимость
         <br />
@@ -154,7 +154,7 @@
         </h2>
       </div>
       <div class="wrapper">
-        <div class="buildings__item full-width wrapper" x-data="{isOpen: true}">
+        <div class="buildings__item full-width wrapper" x-data="{isOpen: true}" id="portfolio1">
           <h2 class="title title_border">
             <span :class="isOpen && 'active'" @click="isOpen = !isOpen">
               <svg class="icon">
@@ -210,7 +210,7 @@
             </div>
           </div>
         </div>
-        <div class="buildings__item full-width wrapper" x-data="{isOpen: true}">
+        <div class="buildings__item full-width wrapper" x-data="{isOpen: true}" id="portfolio2">
           <h2 class="title title_border">
             <span :class="isOpen && 'active'" @click="isOpen = !isOpen">
               <svg class="icon">
@@ -262,7 +262,7 @@
             </div>
           </div>
         </div>
-        <div class="buildings__item full-width wrapper" x-data="{isOpen: true}">
+        <div class="buildings__item full-width wrapper" x-data="{isOpen: true}" id="portfolio3">
           <h2 class="title title_border">
             <span :class="isOpen && 'active'" @click="isOpen = !isOpen">
               <svg class="icon">
@@ -302,7 +302,7 @@
             </div>
           </div>
         </div>
-        <div class="buildings__item full-width wrapper" x-data="{isOpen: true}">
+        <div class="buildings__item full-width wrapper" x-data="{isOpen: true}" id="portfolio4">
           <h2 class="title title_border">
             <span :class="isOpen && 'active'" @click="isOpen = !isOpen">
               <svg class="icon">
@@ -344,7 +344,7 @@
         </div>
       </div>
     </div>
-    <div class="metal-structures full-width wrapper">
+    <div class="metal-structures full-width wrapper" id="shop1">
       <div class="metal-structures__title full-width wrapper">
         <h2 class="title title_border">Цех металлоконструкций</h2>
       </div>
@@ -375,7 +375,7 @@
         <div class="metal-structures__gallery__item"><img src="images/photos/09.jpg" alt="" /></div>
       </div>
     </div>
-    <div class="awning-cutting full-width wrapper">
+    <div class="awning-cutting full-width wrapper" id="shop2">
       <div class="awning-cutting__title full-width wrapper">
         <h2 class="title title_border">
           Цех по раскройке тента
@@ -414,7 +414,7 @@
         <div class="awning-cutting__gallery__item"><img src="images/photos/12.png" alt="" /></div>
       </div>
     </div>
-    <div class="flexible-sandwich full-width wrapper">
+    <div class="flexible-sandwich full-width wrapper" id="sandwich">
       <img
         src="images/flexible-sandwich/logo.png"
         alt="«ГИБКИЙ СЭНДВИЧ»"
@@ -478,7 +478,7 @@
         </div>
       </div>
     </div>
-    <div class="buildings-advantages full-width wrapper">
+    <div class="buildings-advantages full-width wrapper" id="complete-buildings">
       <div class="buildings-advantages__title full-width wrapper">
         <h2 class="title title_border">
           Преимущества полнокомплектных зданий
@@ -525,7 +525,7 @@
           <p>Разнообразные решения фасадов (утепленные здания по технологии «Гибкий сэндвич»)</p>
         </div>
       </div>
-      <div class="buildings-advantages__constructions">
+      <div class="buildings-advantages__constructions" id="constructions">
         <div>
           <h2 class="title title_border">Все виды конструкций</h2>
           <p>
@@ -605,6 +605,118 @@
           <img src="images/gradient.png" alt="" class="advantages__item__gradient" />
           <p>Снижение зависимости от импортных решений</p>
         </div>
+      </div>
+    </div>
+    <div class="partners">
+      <h2 class="title title_border">
+        Работаем с ведущими поставщиками сырья и материалов
+        <br />
+        <span>Только проверенные поставщики и лидеры отрасли</span>
+      </h2>
+      <div class="partners__slider">
+        <div class="partners__slider__arrow partners__slider__arrow_left" js-partners-slider-left>
+          <svg class="icon">
+            <use xlink:href="images/icons/icons.svg#chevron-bottom"></use>
+          </svg>
+        </div>
+        <div class="swiper" js-partners-slider>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/partners/01.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/partners/02.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/partners/03.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/partners/04.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/partners/05.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/partners/06.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/partners/07.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/partners/08.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/partners/09.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/partners/10.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/partners/11.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/partners/12.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="partners__slider__arrow partners__slider__arrow_right" js-partners-slider-right>
+          <svg class="icon">
+            <use xlink:href="images/icons/icons.svg#chevron-bottom"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="request" id="back-call">
+      <h2 class="title title_border">
+        Рассчитать стоимость
+        <br />
+        полнокомплектного здания
+      </h2>
+      <form class="request__form">
+        <input x-data x-mask="+7(999)999-99-99" placeholder="+7 (___)___-__-__" />
+        <button class="button button_yellow">Отправить</button>
+      </form>
+      <p>
+        Оставьте заявку и наш менеджер свяжется с Вами. Он ответит на любые ваши вопросы и сделает
+        расчёт
+      </p>
+    </div>
+    <div class="contacts" id="contacts">
+      <div>
+        <h2 class="title title_border">Контакты</h2>
+        <div class="contacts__item">
+          <div class="contacts__item__icon">
+            <svg class="icon">
+              <use xlink:href="images/icons/icons.svg#baloon"></use>
+            </svg>
+          </div>
+          <a href="https://yandex.ru/maps/-/CTGnRea">
+            Московская область, г. Солнечногорск, улица Красная, дом 136
+          </a>
+        </div>
+        <div class="contacts__item">
+          <div class="contacts__item__icon">
+            <svg class="icon">
+              <use xlink:href="images/icons/icons.svg#letter"></use>
+            </svg>
+          </div>
+          <a href="mailto:sales@avrial.ru">sales@avrial.ru</a>
+        </div>
+        <div class="contacts__item">
+          <div class="contacts__item__icon">
+            <svg class="icon">
+              <use xlink:href="images/icons/icons.svg#phone"></use>
+            </svg>
+          </div>
+          <a href="tel:84953745910">8 (495) 374-59-10</a>
+        </div>
+      </div>
+      <div class="contacts__map">
+        <script
+          type="text/javascript"
+          charset="utf-8"
+          async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5b726efd79dba16ee62654ae2b35b0fa066552152cedc9ce971d4a4fcf48c026&amp;width=100%25&amp;height=489&amp;lang=ru_RU&amp;scroll=true"></script>
       </div>
     </div>
     @@include('html/footer.html', {}) @@include('html/script.html', {})
